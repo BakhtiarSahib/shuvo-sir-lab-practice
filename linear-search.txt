@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int arr[5],n,i,x;
+    printf("Enter many Elements: ");
+    scanf("%d",&n);
+    for( i=0; i<n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter element to search: ");
+    scanf("%d",&x);
+    for(i=0; i<n; ++i)
+    {
+        if(arr[i]==x)
+        {
+
+            printf("item found %d\n",arr[i]);
+            printf("location %d",i);
+
+            break;
+
+        }
+       else if(i==n-1)
+      {
+           printf("not found");
+      }
+
+
+    }
+
+}
